@@ -1,0 +1,13 @@
+
+.nav-main{
+  padding-left: 10%;
+  padding-right: 2%;
+}
+.nav-main h1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: xx-large;
+  
+}
+.nav-main strong{
+  color: darkslategray;
+}

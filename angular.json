@@ -24,10 +24,17 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.css"
+       "styles": [
+  "src/styles.css",
+  "node_modules/slick-carousel/slick/slick.css",
+  "node_modules/slick-carousel/slick/slick-theme.css"
+],
+
+            "scripts": [
+            "node_modules/jquery/dist/jquery.min.js",
+            "node_modules/slick-carousel/slick/slick.min.js"
             ],
-            "scripts": [],
+
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -89,6 +96,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -96,5 +104,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

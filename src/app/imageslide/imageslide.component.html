@@ -1,0 +1,12 @@
+<div class="slider-container">
+  <div class="slide" *ngFor="let image of images; let i = index" [ngClass]="{'active': i === currentIndex}">
+    <img class="img-file" [src]="image" alt="Image">
+  </div>
+
+  <button (click)="prev()">
+    <mat-icon>keyboard_arrow_left</mat-icon>  <!-- Correct icon name -->
+  </button>
+  <button (click)="next()">
+    <mat-icon>keyboard_arrow_right</mat-icon>  <!-- Correct icon name -->
+  </button>
+</div>

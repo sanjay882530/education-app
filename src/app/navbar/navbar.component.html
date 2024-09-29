@@ -1,0 +1,43 @@
+
+
+<nav class="bg-gray-200 border-gray-200 px-4 py-2.5 rounded">
+  <div class="container flex flex-wrap justify-between items-center mx-auto">
+    <a href="/" class="flex items-center">
+      <span class="self-center text-xl font-semibold whitespace-nowrap">ElectronicTech</span>
+    </a>
+    
+ <!-- Hamburger button for mobile -->
+ <button id="navbar-toggle" type="button" class="inline-flex items-center p-2 ml-3 text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+  <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M3 5h14a1 1 0 010 2H3a1 1 0 010-2zm0 4h14a1 1 0 010 2H3a1 1 0 010-2zm0 4h14a1 1 0 010 2H3a1 1 0 010-2z" clip-rule="evenodd"></path>
+  </svg>
+</button>
+ <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+  <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+    <li><a href="/" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Home</a></li>
+    <li><button mat-button [matMenuTriggerFor]="aboveMenu" (mouseenter)="menuTrigger.openMenu()">Courses</button>
+
+      <mat-menu #aboveMenu="matMenu" yPosition="above">
+        <button mat-menu-item><a href="/pages">Electrical engineering</a></button>
+        <button mat-menu-item>Information technology</button>
+        <button mat-menu-item>Mechanical Engineering</button>
+        <button mat-menu-item>Chemical Engineering</button>
+        <button mat-menu-item>Civil Engineering</button>
+        <button mat-menu-item>Aerospace Engineering</button>
+        <button mat-menu-item>Automobile Engineering</button>
+        <button mat-menu-item>Civil Engineering</button>
+      </mat-menu>
+       </li>
+    
+    <li>
+      <form class="flex items-center mt-2 md:mt-0">
+        <input class="bg-blue-200 rounded-lg p-2 focus:outline-none" type="text" placeholder="Search">
+        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded-lg text-sm px-4 py-2 ml-2">Search</button>
+      </form>
+    </li>
+  </ul>
+
+</div>
+  </div>
+  
+</nav>
